@@ -25,6 +25,8 @@ public class GameProject1 {
         GameProject1 myGame = new GameProject1();
         myGame.getName();
         myGame.displayHelp();
+        mysteryWord myMysteryWord = new mysteryWord();
+        myMysteryWord.chooseLetter();
     }
     
     public void getName() {
@@ -34,7 +36,9 @@ public class GameProject1 {
     }
     
     public void displayHelp() {
-        System.out.println("\nWelcome " + this.name + "\n");
+        System.out.println("\nHello " + this.name + "\n");
         System.out.println(this.instructions);
     }
+    
+    
 }
