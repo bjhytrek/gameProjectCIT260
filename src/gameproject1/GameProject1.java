@@ -24,9 +24,12 @@ public class GameProject1 {
     public static void main(String[] args) {
         GameProject1 myGame = new GameProject1();
         myGame.getName();
-        myGame.displayHelp();
+        myGame.displayHelp();  
+        wordBank myWordBank = new wordBank();
+        myWordBank.pickone();
         mysteryWord myMysteryWord = new mysteryWord();
         myMysteryWord.chooseLetter();
+        myMysteryWord.displayChoice();
     }
     
     public void getName() {
@@ -39,6 +42,7 @@ public class GameProject1 {
         System.out.println("\nHello " + this.name + "\n");
         System.out.println(this.instructions);
     }
+    
     
     
 }
